@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motherboard Chipset</title>
+    <style>
+
+        ul.navigation {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: deepskyblue;
+
+        }
+
+        ul.article-list > li ul {
+            font-size: 150%;
+        }
+
+        ul.navigation > li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 46px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover {
+            background-color: lightskyblue;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightskyblue;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .article {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+            clear: right;
+        }
+
+        img.image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min-content;
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .article > h1, .article-content, aside {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .article-content {
+            background: white;
+        }
+
+        .article-content > h2, p {
+            margin: 4px;
+            text-align: left;
+            font-size: 150%;
+        }
+
+        .article-list {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="navigation">
+    <li><a href="Home-Page.html">Home</a></li>
+    <li><a href="GettingStarted.html">Getting Started</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Tower</a>
+        <div class="dropdown-content">
+            <a href="Tower-Overview.html">Overview</a>
+            <a href="Tower-Specs.html">Specifications</a>
+            <a href="Tower-Setup.html">Setup</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown" style="background-color: dodgerblue">Motherboard</a>
+        <div class="dropdown-content">
+            <a href="Motherboard-Overview.html">Overview</a>
+            <a href="Motherboad-Layout.html">Layout</a>
+            <a href="Motherboard-Specs.html">Specifications</a>
+            <a href="Motherboard-Chipset.html" style="background-color: dodgerblue">Chipset</a>
+            <a href="Motherboard-CPUSocket.html">CPU Socket</a>
+            <a href="Motherboard-DIMMSlots.html">DIMM Slots</a>
+            <a href="Motherboard-PCISlots.html">PCI Slots</a>
+            <a href="Motherboard-Connections.html">Connections</a>
+            <a href="Motherboard-Backpanel.html">Back I/O Panel</a>
+            <a href="Motherboard-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU</a>
+        <div class="dropdown-content">
+            <a href="CPU-Overview.html">Overview</a>
+            <a href="CPU-Specs.html">Specifications</a>
+            <a href="CPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">GPU</a>
+        <div class="dropdown-content">
+            <a href="GPU-Overview.html">Overview</a>
+            <a href="GPU-Specs.html">Specifications</a>
+            <a href="GPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">PSU</a>
+        <div class="dropdown-content">
+            <a href="PSU-Overview.html">Overview</a>
+            <a href="PSU-Specs.html">Specifications</a>
+            <a href="PSU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU Cooler</a>
+        <div class="dropdown-content">
+            <a href="CPUCooler-Overview.html">Overview</a>
+            <a href="CPUCooler-Specs.html">Specifications</a>
+            <a href="CPUCooler-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">RAM</a>
+        <div class="dropdown-content">
+            <a href="RAM-Overview.html">Overview</a>
+            <a href="RAM-Specs.html">Specifications</a>
+            <a href="RAM-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">HDDs/SDDs</a>
+        <div class="dropdown-content">
+            <a href="Storage-Overview.html">Overview</a>
+            <a href="Storage-Specs.html">Specifications</a>
+            <a href="Storage-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Fans</a>
+        <div class="dropdown-content">
+            <a href="Fans-Overview.html">Overview</a>
+            <a href="Fans-Specs.html">Specifications</a>
+            <a href="Fans-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Assembly</a>
+        <div class="dropdown-content">
+            <a href="Assembly.html">Assembly</a>
+            <a href="AssemblyQuiz.html">Assembly Quiz</a>
+        </div>
+    </li>
+</ul>
+
+<h1 style="text-align: center;">The Motherboard - Chipset</h1>
+
+<article class="article">
+    <article class="article-content">
+        <h2>What is the chipset</h2>
+        <p>
+            Other than the CPU socket, the other component of the motherboard that will affect what components that can be chosen <br>
+            for compatibility purposes is the <b>chipset of the motherboard</b>. The chipset is the backbone of the motherboard <br>
+            made of silicon; therefore, unlike many of the components in a computer, the chipset <b>CANNOT be upgraded</b>. <br>
+            Again, this is because the chipset is physically integrated with the motherboard, which is why it is important to choose <br>
+            the right chipset, because it <b>affects compatibility and the specs</b> of the motherboard. The chipset of the motherboard <br>
+            determines <b>what generation of CPUs it can support</b>, which goes back to the chipset affecting the capabilities of the motherboard. <br>
+            When a chipset is no longer able to handle the capabilities of a CPU, a newer more powerful chipset is needed.
+        </p>
+    </article>
+    <article class="article-content">
+        <h2>What does the chipset do</h2>
+        <p>
+            The chipset plays a passive role in the system by determining the limits of what the motherboard can handle, <br>
+            but this limitation exists due to the active role that the chipset has in motherboard function. The chipset <br>
+            is responsible for <b>managing the communications between the all the subsystems of the computer</b> which include <br>
+            the CPU, RAM, Storage, all the devices connected to the PCI expansion slots, and the peripherals. Because it manages <br>
+            the communications between all components of the computer it can only handle so much communication before it starts falling behind; <br>
+            it is this limitation that puts a hard cap on the amount of RAM, power of the CPU, number of USB ports, etc. that the motherboard supports.
+        </p>
+    </article>
+    <article class="article-content">
+        <h2>How to select a chipset</h2>
+        <p>
+            So, if the chipset is so important in what the motherboard can support, the choosing the right chipset must be difficult <br>
+            and prone to choosing the wrong one, right? You see, that's where you would be mistaken, the process of choosing <br>
+            the right chipset is quite simple. The best way to approach this process is to:
+        </p>
+        <ol class="article-list">
+            <li>First choose the CPU you are going to want. While the process is still simple if you choose the motherboard first, <br>
+                you would be limiting the pool of CPUs you can choose from. This can be a problem when the market for CPUs is dominated <br>
+                by Intel and AMD, which further limits your options and could prevent you from choosing the CPU your heart desires. <br>
+                Going the other way is more suitable as there are more options available to you when choosing <b>the motherboard for the CPU</b> <br>
+                rather than <b>choosing a CPU for the motherboard</b>. </li>
+
+            <li>After selecting the CPU that you desire, next you want to research the specs of the CPU. In the specifications of the CPU, <br>
+                you'll find the chipset that it supports. Once you have obtained that piece of information, simply filter your search <br>
+                of motherboards to only include motherboards with that chipset.</li>
+        </ol>
+        <p>
+            That is all there is to it when it comes to deciding on a chipset, if you follow these two steps when making your decision <br>
+            the process should be straight forward and stress-free.
+        </p>
+    </article>
+</article>
+
+
+</body>
+</html>

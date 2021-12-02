@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motherboard Overview</title>
+    <style>
+
+        ul.navigation {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: deepskyblue;
+
+        }
+
+        ul.article-list > li ul {
+            font-size: 150%;
+        }
+
+        ul.navigation > li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 46px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover {
+            background-color: lightskyblue;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightskyblue;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .article {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+            clear: right;
+        }
+
+        img.image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min-content;
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .article > h1, .article-content, aside {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .article-content {
+            background: white;
+        }
+
+        .article-content > h2, p {
+            margin: 4px;
+            text-align: left;
+            font-size: 150%;
+        }
+
+        .article-list {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="navigation">
+    <li><a href="Home-Page.html">Home</a></li>
+    <li><a href="GettingStarted.html">Getting Started</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Tower</a>
+        <div class="dropdown-content">
+            <a href="Tower-Overview.html">Overview</a>
+            <a href="Tower-Specs.html">Specifications</a>
+            <a href="Tower-Setup.html">Setup</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown" style="background-color: dodgerblue">Motherboard</a>
+        <div class="dropdown-content">
+            <a href="Motherboard-Overview.html" style="background-color: dodgerblue">Overview</a>
+            <a href="Motherboad-Layout.html">Layout</a>
+            <a href="Motherboard-Specs.html">Specifications</a>
+            <a href="Motherboard-Chipset.html">Chipset</a>
+            <a href="Motherboard-CPUSocket.html">CPU Socket</a>
+            <a href="Motherboard-DIMMSlots.html">DIMM Slots</a>
+            <a href="Motherboard-PCISlots.html">PCI Slots</a>
+            <a href="Motherboard-Connections.html">Connections</a>
+            <a href="Motherboard-Backpanel.html">Back I/O Panel</a>
+            <a href="Motherboard-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU</a>
+        <div class="dropdown-content">
+            <a href="CPU-Overview.html">Overview</a>
+            <a href="CPU-Specs.html">Specifications</a>
+            <a href="CPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">GPU</a>
+        <div class="dropdown-content">
+            <a href="GPU-Overview.html">Overview</a>
+            <a href="GPU-Specs.html">Specifications</a>
+            <a href="GPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">PSU</a>
+        <div class="dropdown-content">
+            <a href="PSU-Overview.html">Overview</a>
+            <a href="PSU-Specs.html">Specifications</a>
+            <a href="PSU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU Cooler</a>
+        <div class="dropdown-content">
+            <a href="CPUCooler-Overview.html">Overview</a>
+            <a href="CPUCooler-Specs.html">Specifications</a>
+            <a href="CPUCooler-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">RAM</a>
+        <div class="dropdown-content">
+            <a href="RAM-Overview.html">Overview</a>
+            <a href="RAM-Specs.html">Specifications</a>
+            <a href="RAM-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">HDDs/SDDs</a>
+        <div class="dropdown-content">
+            <a href="Storage-Overview.html">Overview</a>
+            <a href="Storage-Specs.html">Specifications</a>
+            <a href="Storage-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Fans</a>
+        <div class="dropdown-content">
+            <a href="Fans-Overview.html">Overview</a>
+            <a href="Fans-Specs.html">Specifications</a>
+            <a href="Fans-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Assembly</a>
+        <div class="dropdown-content">
+            <a href="Assembly.html">Assembly</a>
+            <a href="AssemblyQuiz.html">Assembly Quiz</a>
+        </div>
+    </li>
+</ul>
+
+<h1 style="text-align: center;">The Motherboard - Overview</h1>
+
+<article class="article">
+    <article class="article-content">
+        <h2>What is the motherboard?</h2>
+        <p style="position: relative; min-height: 425px">
+            The Motherboard, undoubtedly the most integral and significant part of the whole system. While it isn't <br>
+            the sole holder of the 'without this component, the whole system would cease to function' title (other <br>
+            components that also hold this title being the CPU and RAM to name a couple) the motherboard is also what <br>
+            coordinates the interactions between components and directs these components what to do. <br>
+            It is able to do this because <b>it acts as the interface for all the different components</b> allowing the <br>
+            different hands of the system communicate with one another. Similar to how our brains are the interface for <br>
+            our whole bodies and is how different organ systems of the body communicate and coordinate with each other. <br>
+            This section will cover the basics of the motherboard including all the different parts that it is made up of <br>
+            and how to install it. <br>
+            <img class="image" src="MotherboardImage.jpg" alt="Motherboard Picture" style="height: 400px; width: 400px">
+        </p>
+    </article>
+    <article class="article-content">
+        <h2>What does the motherboard do?</h2>
+        <p>
+            For everything the motherboard is responsible for, it is practically a computer in it of itself. <br>
+            The motherboard oversees the operation of the <b>WHOLE</b> system; making it the backbone of the computer. <br>
+            which means no motherboard, no computer. <br>
+            These are just <b><u>some</u></b> of the tasks the motherboard is responsible for overseeing: <br>
+        </p>
+        <ul class="article-list">
+            <li>Act as the "central hub" of the computer, everything is connected to the rest of the system <br>
+                through the motherboard, allowing all the other components of the computer to communicate.</li>
+            <li>In addition to being the <b>connection hub</b> of the computers components, it is also the <br>
+                <b>communication hub</b> for the other modular parts. The parts <b>send/receive data through the <br>
+                    motherboard</b> and the board then <b>organizes, manage, and prioritize the data.</b></li>
+            <li>Manage all the subsystems of the computer and ensure that each subsystem gets everything that it <br>
+                needs to function properly, the most important one being <b>power distribution</b>.</li>
+            <li>In addition to being the 'hub' for all the required components to function, it is also a <br>
+                platform that provides <b>expansion slots</b> which are slots in which other devices or interfaces <br>
+                can be installed.</li>
+            <li>The motherboard also stores the <b>BIOS (Basic Input/Output System)</b> which is a piece of memory <br>
+                that should never be touched if you do not know what you are doing. The BIOS is what tells the motherboard <br>
+                what to do in the initial stages of booting. If the BIOS is <b>flashed</b> wrong, where flashing is the <br>
+                process of setting the BIOS, the computer won't even boot, and if there is no external method to flash <br>
+                the motherboard, the board is <b>bricked</b>, or unusable even though there is nothing actually wrong with <br>
+                component. Though we're getting ahead of ourselves here, as the BIOS is more of an advanced topic, so <br>
+                we don't have to worry about that at the moment.</li>
+        </ul>
+    </article>
+    <article class="article-content">
+        <h2>The different parts of the motherboard</h2>
+        <p>
+            The motherboard, much like our brains, is a very complex piece of technology, something it needs to <br>
+            be as it's the <b>main printed circuit</b> of the computer. Like how there are many parts <br>
+            of the brain, the motherboard also can be divided into different parts. The motherboard can be divided into <br>
+            the following parts, all of which will be covered in greater detail in this section: <br>
+        </p>
+        <ul class="article-list">
+            <li>Chipset</li>
+            <li>CPU Socket</li>
+            <li>DIMM Slots</li>
+            <li>PCI Slots</li>
+            <li>Connections</li>
+            <li>Back I/O Panel</li>
+        </ul>
+    </article>
+</article>
+
+
+</body>
+</html>

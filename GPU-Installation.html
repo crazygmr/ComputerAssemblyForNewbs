@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPU Installation</title>
+    <style>
+
+        ul.navigation {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: deepskyblue;
+
+        }
+
+        ul.article-list > li ul {
+            font-size: 150%;
+        }
+
+        ul.navigation > li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 46px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover {
+            background-color: lightskyblue;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightskyblue;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .article {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+            clear: right;
+        }
+
+        img.image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min-content;
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .article > h1, .article-content, aside {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .article-content {
+            background: white;
+        }
+
+        .article-content > h2, p {
+            margin: 4px;
+            text-align: left;
+            font-size: 150%;
+        }
+
+        .article-list {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="navigation">
+    <li><a href="Home-Page.html">Home</a></li>
+    <li><a href="GettingStarted.html">Getting Started</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Tower</a>
+        <div class="dropdown-content">
+            <a href="Tower-Overview.html">Overview</a>
+            <a href="Tower-Specs.html">Specifications</a>
+            <a href="Tower-Setup.html">Setup</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Motherboard</a>
+        <div class="dropdown-content">
+            <a href="Motherboard-Overview.html">Overview</a>
+            <a href="Motherboad-Layout.html">Layout</a>
+            <a href="Motherboard-Specs.html">Specifications</a>
+            <a href="Motherboard-Chipset.html">Chipset</a>
+            <a href="Motherboard-CPUSocket.html">CPU Socket</a>
+            <a href="Motherboard-DIMMSlots.html">DIMM Slots</a>
+            <a href="Motherboard-PCISlots.html">PCI Slots</a>
+            <a href="Motherboard-Connections.html">Connections</a>
+            <a href="Motherboard-Backpanel.html">Back I/O Panel</a>
+            <a href="Motherboard-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU</a>
+        <div class="dropdown-content">
+            <a href="CPU-Overview.html">Overview</a>
+            <a href="CPU-Specs.html">Specifications</a>
+            <a href="CPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown" style="background-color: dodgerblue">GPU</a>
+        <div class="dropdown-content">
+            <a href="GPU-Overview.html">Overview</a>
+            <a href="GPU-Specs.html">Specifications</a>
+            <a href="GPU-Installation.html" style="background-color: dodgerblue">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">PSU</a>
+        <div class="dropdown-content">
+            <a href="PSU-Overview.html">Overview</a>
+            <a href="PSU-Specs.html">Specifications</a>
+            <a href="PSU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU Cooler</a>
+        <div class="dropdown-content">
+            <a href="CPUCooler-Overview.html">Overview</a>
+            <a href="CPUCooler-Specs.html">Specifications</a>
+            <a href="CPUCooler-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">RAM</a>
+        <div class="dropdown-content">
+            <a href="RAM-Overview.html">Overview</a>
+            <a href="RAM-Specs.html">Specifications</a>
+            <a href="RAM-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">HDDs/SDDs</a>
+        <div class="dropdown-content">
+            <a href="Storage-Overview.html">Overview</a>
+            <a href="Storage-Specs.html">Specifications</a>
+            <a href="Storage-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Fans</a>
+        <div class="dropdown-content">
+            <a href="Fans-Overview.html">Overview</a>
+            <a href="Fans-Specs.html">Specifications</a>
+            <a href="Fans-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Assembly</a>
+        <div class="dropdown-content">
+            <a href="Assembly.html">Assembly</a>
+            <a href="AssemblyQuiz.html">Assembly Quiz</a>
+        </div>
+    </li>
+</ul>
+
+<h1 style="text-align: center;">Installation of the GPU</h1>
+
+<article class="article">
+    <article class="article-content">
+        <p>
+            This article will cover the steps to install the GPU. As always, consult the manual if you don't see the path <br>
+            in front of you clearly. The steps to install the GPU are as follows: <br>
+        </p>
+
+        <ol class="article-list">
+            <li style="position: relative; min-height: 450px">
+                First you want to identify the expansion slot that the GPU will go in. As explained in the motherboard section, <br>
+                the GPU goes in the expansion slots (also known as the PCI-Express slots). While there are a handful of <br>
+                PCI-Express slots, there is only one that the GPU can go in, <b>the PCIe x 16 slot</b>. Which is easily <br>
+                identified as the <b>longest</b> expansion slot. Though if you are having trouble determining the right slot <br>
+                consult the motherboard manual.
+                <img class="image" src="PCIe%20x16%20slot.jpg" alt="A PCIe 16 slot" style="width: 400px; height: 400px; position: absolute">
+            </li>
+            <li>
+                There is a clip on the right side of the PCIe slot which will help hold the GPU in place once installed. <br>
+                You want to make sure the clip is in an open state; then you want to line up the GPU to the slot, and then <br>
+                apply pressure until you hear a click.
+            </li>
+            <li>
+                Lastly, there is normally a little grove on the back panel of the GPU that matches up with a hole on the <br>
+                back of the case. Take the appropriate screw, which you figure out by looking at the towers manual, and <br>
+                use a screwdriver to screw the screw into the slot, providing another way to anchor the GPU.
+            </li>
+        </ol>
+        <p>
+            Congratulations, the GPU is now installed.
+        </p>
+    </article>
+</article>
+</body>
+</html>

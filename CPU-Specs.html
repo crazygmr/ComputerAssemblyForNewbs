@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPU Specifications</title>
+    <style>
+
+        ul.navigation {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: deepskyblue;
+
+        }
+
+        ul.article-list > li ul {
+            font-size: 150%;
+        }
+
+        ul.navigation > li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 46px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover {
+            background-color: lightskyblue;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightskyblue;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .article {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+            clear: right;
+        }
+
+        img.image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min-content;
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .article > h1, .article-content, aside {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .article-content {
+            background: white;
+        }
+
+        .article-content > h2, p {
+            margin: 4px;
+            text-align: left;
+            font-size: 150%;
+        }
+
+        .article-list {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="navigation">
+    <li><a href="Home-Page.html">Home</a></li>
+    <li><a href="GettingStarted.html">Getting Started</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Tower</a>
+        <div class="dropdown-content">
+            <a href="Tower-Overview.html">Overview</a>
+            <a href="Tower-Specs.html">Specifications</a>
+            <a href="Tower-Setup.html">Setup</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Motherboard</a>
+        <div class="dropdown-content">
+            <a href="Motherboard-Overview.html">Overview</a>
+            <a href="Motherboad-Layout.html">Layout</a>
+            <a href="Motherboard-Specs.html">Specifications</a>
+            <a href="Motherboard-Chipset.html">Chipset</a>
+            <a href="Motherboard-CPUSocket.html">CPU Socket</a>
+            <a href="Motherboard-DIMMSlots.html">DIMM Slots</a>
+            <a href="Motherboard-PCISlots.html">PCI Slots</a>
+            <a href="Motherboard-Connections.html">Connections</a>
+            <a href="Motherboard-Backpanel.html">Back I/O Panel</a>
+            <a href="Motherboard-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown" style="background-color: dodgerblue">CPU</a>
+        <div class="dropdown-content">
+            <a href="CPU-Overview.html">Overview</a>
+            <a href="CPU-Specs.html" style="background-color: dodgerblue">Specifications</a>
+            <a href="CPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">GPU</a>
+        <div class="dropdown-content">
+            <a href="GPU-Overview.html">Overview</a>
+            <a href="GPU-Specs.html">Specifications</a>
+            <a href="GPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">PSU</a>
+        <div class="dropdown-content">
+            <a href="PSU-Overview.html">Overview</a>
+            <a href="PSU-Specs.html">Specifications</a>
+            <a href="PSU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU Cooler</a>
+        <div class="dropdown-content">
+            <a href="CPUCooler-Overview.html">Overview</a>
+            <a href="CPUCooler-Specs.html">Specifications</a>
+            <a href="CPUCooler-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">RAM</a>
+        <div class="dropdown-content">
+            <a href="RAM-Overview.html">Overview</a>
+            <a href="RAM-Specs.html">Specifications</a>
+            <a href="RAM-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">HDDs/SDDs</a>
+        <div class="dropdown-content">
+            <a href="Storage-Overview.html">Overview</a>
+            <a href="Storage-Specs.html">Specifications</a>
+            <a href="Storage-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Fans</a>
+        <div class="dropdown-content">
+            <a href="Fans-Overview.html">Overview</a>
+            <a href="Fans-Specs.html">Specifications</a>
+            <a href="Fans-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Assembly</a>
+        <div class="dropdown-content">
+            <a href="Assembly.html">Assembly</a>
+            <a href="AssemblyQuiz.html">Assembly Quiz</a>
+        </div>
+    </li>
+</ul>
+
+<h1 style="text-align: center;">CPU Specifications</h1>
+
+<article class="article">
+    <article class="article-content">
+        <p>
+            The CPU, when deciding on what CPU to go with, in terms of compatibility, it's not that much more complicated than <br>
+            selecting a motherboard. It wouldn't be farfetched to say that it's even simpler choose  than choosing a motherboard, <br>
+            especially if you end up <b>choosing a motherboard for the CPU</b> rather than the other way around. This is because the only <br>
+            specification that affects compatibility is the form factor of the CPU which determines what CPU socket it goes into. <br> <br>
+            This process complicates itself if you are looking for a CPU basing it on what you need it to do. These are the all the <br>
+            various specifications of the CPU that must be kept in mind if the capabilities of the CPU matter
+        </p>
+        <ul class="article-list">
+            <li>The Clock-speed; which simply means <b>the rate at which the processor can process</b>.</li>
+            <li>The voltage requirements; while not a factor in the performance, it's something that need be kept in mind <br>
+                as it will affect what PSU you choose.</li>
+            <li>The number of cores the CPU has; this affects the capability of the CPU to multitask, more cores means more simultaneous threads.</li>
+            <li>The size of the cache; which affects how much data it can store in a place that is quickly accessible from main memory.</li>
+        </ul>
+        <p>
+            Those are the basics of the CPU specifications, if you are looking for more in depth descriptions of each of the CPU specs <br>
+            I recommend doing further reading yourself, as the website only aims to teach computer assembly and the basics of the components of <br>
+            the system.
+        </p>
+    </article>
+    <!--<article class="article-content">
+        <h2>"Subtopic Title goes here"</h2>
+        <p>"Subtopic content goes here"</p>
+    </article>
+    <article class="article-content">
+        <h2>"Subtopic Title goes here"</h2>
+        <p>"Subtopic content goes here"</p>
+    </article>-->
+</article>
+
+
+</body>
+</html>

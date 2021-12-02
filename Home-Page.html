@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+
+        ul.navigation {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: deepskyblue;
+
+        }
+
+        ul.article-list > li ul {
+            font-size: 150%;
+        }
+
+        ul.navigation > li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 46px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover {
+            background-color: lightskyblue;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightskyblue;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .article {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+            clear: right;
+        }
+
+        img.image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min-content;
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .article > h1, .article-content, aside {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .article-content {
+            background: white;
+        }
+
+        .article-content > h2, p {
+            margin: 4px;
+            text-align: left;
+            font-size: 150%;
+        }
+
+        .article-list {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="navigation">
+    <li><a href="Home-Page.html" style="background-color: dodgerblue">Home</a></li>
+    <li><a href="GettingStarted.html">Getting Started</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Tower</a>
+        <div class="dropdown-content">
+            <a href="Tower-Overview.html">Overview</a>
+            <a href="Tower-Specs.html">Specifications</a>
+            <a href="Tower-Setup.html">Setup</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Motherboard</a>
+        <div class="dropdown-content">
+            <a href="Motherboard-Overview.html">Overview</a>
+            <a href="Motherboad-Layout.html">Layout</a>
+            <a href="Motherboard-Specs.html">Specifications</a>
+            <a href="Motherboard-Chipset.html">Chipset</a>
+            <a href="Motherboard-CPUSocket.html">CPU Socket</a>
+            <a href="Motherboard-DIMMSlots.html">DIMM Slots</a>
+            <a href="Motherboard-PCISlots.html">PCI Slots</a>
+            <a href="Motherboard-Connections.html">Connections</a>
+            <a href="Motherboard-Backpanel.html">Back I/O Panel</a>
+            <a href="Motherboard-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU</a>
+        <div class="dropdown-content">
+            <a href="CPU-Overview.html">Overview</a>
+            <a href="CPU-Specs.html">Specifications</a>
+            <a href="CPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">GPU</a>
+        <div class="dropdown-content">
+            <a href="GPU-Overview.html">Overview</a>
+            <a href="GPU-Specs.html">Specifications</a>
+            <a href="GPU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">PSU</a>
+        <div class="dropdown-content">
+            <a href="PSU-Overview.html">Overview</a>
+            <a href="PSU-Specs.html">Specifications</a>
+            <a href="PSU-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">CPU Cooler</a>
+        <div class="dropdown-content">
+            <a href="CPUCooler-Overview.html">Overview</a>
+            <a href="CPUCooler-Specs.html">Specifications</a>
+            <a href="CPUCooler-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">RAM</a>
+        <div class="dropdown-content">
+            <a href="RAM-Overview.html">Overview</a>
+            <a href="RAM-Specs.html">Specifications</a>
+            <a href="RAM-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">HDDs/SDDs</a>
+        <div class="dropdown-content">
+            <a href="Storage-Overview.html">Overview</a>
+            <a href="Storage-Specs.html">Specifications</a>
+            <a href="Storage-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Fans</a>
+        <div class="dropdown-content">
+            <a href="Fans-Overview.html">Overview</a>
+            <a href="Fans-Specs.html">Specifications</a>
+            <a href="Fans-Installation.html">Installation</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown">Assembly</a>
+        <div class="dropdown-content">
+            <a href="Assembly.html">Assembly</a>
+            <a href="AssemblyQuiz.html">Assembly Quiz</a>
+        </div>
+    </li>
+</ul>
+
+<h1 style="text-align: center;">Welcome to Computer Newbz:<br> Computer Components and Assembly</h1>
+
+<article class="article">
+    <h1>Objective of the site</h1>
+    <article class="article-content">
+        <p>
+            Welcome to Computer Newbz: A website intended for those who want to build their own computer <br>
+            but don't quite know what exactly to do or where to start. <br>
+            Enter this Website, the goal of the website is to introduce someone unfamiliar with the concepts <br>
+            to enough technological terminology so they can follow along with the tutor, introduce each component, <br>
+            provide a brief overview of each component, such as what it does, the different parts and walk someone <br>
+            through the process of installing the component. Once someone has gone through each component, they should <br>
+            be able to assemble their very own computer!
+        </p>
+    </article>
+    <article class="article-content">
+        <p>
+            Though, this website isn't only intended for those looking to learn about computer components and/or <br>
+            to build their first computer. No, the cite is also geared toward those looking to refresh their <br>
+            knowledge or simply for a reference. The website will cover the basics, and some intermediate, topics of <br>
+            each component and at the end of each component, have a walkthrough on how to install the component. <br>
+            The pages are also ordered in a manner that it is recommended that those new to the field follow, <br>
+            with recommended component order being left to right and recommended topic order being top to bottom in <br>
+            the drop down menu. Though users are not required to follow this path and can navigate the site in any <br>
+            order that they may please. After the last component is covered there will be an assembly page that condenses <br>
+            the installation pages of each component into a single page, with a short comprehensive quiz about the material <br>
+            the website covered on the last page.
+        </p>
+    </article>
+    <article class="article-content">
+        <h2>How to navigate the website</h2>
+        <p>
+            The way to navigate the website is straight forward, there will be a navigation bar at the top of every page <br>
+            on the website. The navbar is how the user gets to any particular page on the website. The navigation bar <br>
+            also tells the user what page they are on by highlighting the component and topic they are currently on in <br>
+            a darker color. Like mentioned above the topics in the navbar are listed in the recommended order that those <br>
+            new to computer assembly should follow, with recommended component order being left to right and recommended <br>
+            topic order being top to bottom in the drop down menu. If you find yourself at the bottom topic of one component <br>
+            the top topic of the component to the right is the next recommended page. <br><br>
+
+            Unfortunately, the website isn't able to auto resize itself based on the resolution of the display you are viewing <br>
+            the site from. If you end up encountering any sort of overlapping of elements, manually resize the page using Ctrl + Scroll <br>
+            until the overlapping has stopped. Or a good rule of thumb to go by, zoom the page out until all the dropdown menuse <br>
+            in the navigation bar are all on the same plane, which is how the scale of the website was designed around, <br>
+        </p>
+    </article>
+</article>
+
+
+</body>
+</html>
